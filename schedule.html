@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Schedule</title>
+    <!-- MDB icon -->
+  <link rel="icon" href="img/logo_black.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+      .modal-backdrop.fade.show{
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Intro settings -->
+      <style>
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 58px;
+        }
+      </style>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-black fixed-top navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              id="MDB-logo"
+              src="img/logo.png"
+              alt="MDB Logo"
+              draggable="false"
+              height="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars" style="color: #444"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="index.html"><i class="fas fa-home pe-2"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="matches.html"><i class="far fa-list-alt pe-2"></i>Matches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="news_2.html"><i class="fas fa-newspaper pe-2"></i>News</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Jumbotron -->
+      <div id="intro" class="p-5 text-center bg-light">
+        <h1 class="mb-0">Schedule</h1>
+      </div>
+      <!-- Jumbotron -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mb-4">
+      <div class="container">
+        <div id="detailMatches" class="card row mb-4" style="margin-top: 5px; background-color: #d4d9df;">
+          <div class="d-flex">
+            <div class="p-2" style="font-weight: bold;">Valorant Regional League Spain: Rising - Stage 2</div>
+            <div class="ms-auto p-2">Thursday, May 12th</div>
+          </div>
+          <div class="d-flex mb-5" style="margin-top: -15px;">
+            <div class="p-2">Group Stage: Round 3</div>
+            <div class="ms-auto p-2">10:00 PM +07</div>
+          </div>
+          <div id="img-matches" class="row mb-5" style="margin-top: 12px;">
+            <div class="text-center col-md-4">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://am-a.akamaihd.net/image?resize=150:150&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2F1644542427486_download37.png" class="img-fluid" style="max-width: 130px; max-height: 130px;"/>
+              </div>
+              <p>Team 1</p>
+            </div>
+            
+            <div class="col-md-4 d-flex align-items-center">                      
+              <h4 style="margin-left: auto; margin-right:auto;">
+                <div class="mb-2" style="font-size: 15px; font-weight: lighter; text-align: center;">
+                  FINAL
+                </div>
+                <div class="mb-2 badge bg-dark text-wrap">
+                  0:0
+                </div>
+                <div style="font-size: 15px; font-weight: lighter; text-align: center;">
+                  BO1
+                </div>
+              </h4>
+            </div>
+
+            <div class="text-center col-md-4">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://am-a.akamaihd.net/image?resize=150:150&f=http%3A%2F%2Fstatic.lolesports.com%2Fteams%2Fsentinels.png" class="img-fluid" style="max-width: 130px; max-height: 130px;"/>
+              </div>
+              <p>Team 2</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs navs -->
+        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="ex1-tab-1"
+              data-mdb-toggle="tab"
+              href="#ex1-tabs-1"
+              role="tab"
+              aria-controls="ex1-tabs-1"
+              aria-selected="true"
+              ><i class="fas fa-chart-line"></i> Overview</a
+            >
+          </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex1-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex1-tabs-1"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-1"
+          >
+            <div class="card row mb-4" style="margin-top: 5px;">
+              <div id="detailPlayer" class="row d-flex justify-content-center mb-3">
+                <div class="col-md">
+                  <div class="d-flex flex-row justify-content-center">
+                    <table class="table table-borderless text-center" style="max-width: 400px;">
+                      <thead>
+                        <tr>
+                          <th scope="col">Team 1</th>
+                          <th scope="col"></th>
+                          <th scope="col">ACS</th>
+                          <th scope="col">K</th>
+                          <th scope="col">D</th>
+                          <th scope="col">A</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Mickebwoy</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/sova.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            26
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            26
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            16
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            12
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">szimply</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/raze.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            20
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            5
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">KPZET</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/chamber.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            20
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            1
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">stanley</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/skye.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            14
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            7
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Fizzy</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/brimstone.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            14
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            11
+                          </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class=" d-flex flex-row justify-content-center">
+                    <table class="table table-borderless text-center" style="max-width: 400px;">
+                      <thead>
+                        <tr>
+                          <th scope="col">Team 2</th>
+                          <th scope="col"></th>
+                          <th scope="col">ACS</th>
+                          <th scope="col">K</th>
+                          <th scope="col">D</th>
+                          <th scope="col">A</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Mickebwoy</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/sova.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            26
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            26
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            16
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            12
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">szimply</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/raze.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            20
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            5
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">KPZET</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/chamber.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            20
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            1
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">stanley</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/skye.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            14
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            7
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Fizzy</th>
+                          <td><img class="align-items-center" src="https://www.vlr.gg/img/vlr/game/agents/brimstone.png" alt="" style="max-height:30px"></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            14
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            19
+                          </div></td>
+                          <td><div class="badge text-wrap" style="background-color: #d4d9df; font-size: 13px">
+                            11
+                          </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs content -->
+        <div class="card">
+
+        </div>
+      </div>
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright: Esport.gg
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="js/getDetailMatchs.js"></script>
+    <script src="js/getDetailPlayer.js"></script>
+  </body>
+</html>

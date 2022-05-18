@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Cập nhật tin tức nhanh nhất, mới nhất, chính xác nhất</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo_black.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+      #carouselBasicExample,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+      .carousel-item:nth-child(1) {
+        background-image: url("img/esport_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .carousel-item:nth-child(2) {
+        background-image: url("img/esport_background_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .navbar {
+        z-index: 100;
+      }
+
+      .hero-txt {
+        color: #fff;
+        text-align: center;
+      }
+      .hero-txt .hero-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 85px;
+        font-weight: 400;
+        letter-spacing: 8px;
+        word-spacing: 4px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        padding: 20px 10px;
+      }
+      .hero-txt .hero-work {
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        margin-top: 300px;
+        color: white;
+        /* letter-spacing: 7px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+          blinkTextCursor 500ms infinite; */
+      }
+      .hero-txt .hero-work:after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 4px;
+        margin: 20px auto 0;
+        background-color: transparent;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      @keyframes typewriter {
+        from {
+          width: 0;
+        }
+        to {
+          width: 710px;
+        }
+      }
+      @keyframes blinkTextCursor {
+        from {
+          border-right-color: hsl(0, 0%, 80%);
+        }
+        to {
+          border-right-color: transparent;
+        }
+      }
+
+      p {
+        color: #444;
+      }
+
+      .modal-backdrop.fade.show{
+        display:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="mb-5">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-black fixed-top navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img
+                id="MDB-logo"
+                src="img/logo.png"
+                alt="MDB Logo"
+                draggable="false"
+                height="30"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars" style="color: #444"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 text-white" href="index.html"><i class="fas fa-home pe-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 text-white" href="matches.html"><i class="far fa-list-alt pe-2"></i>Matches</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 text-white" href="news_2.html"><i class="fas fa-newspaper pe-2"></i>News</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Carousel wrapper -->
+        <div id="carouselBasicExample" class="carousel slide carousel-fade shadow-5-strong" data-mdb-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <div class="hero-txt">
+                <p class="hero-work">Nhanh nhất - Mới nhất - Chính xác nhất</p>
+                <h2 class="hero-title">Esport.gg</h2>
+                <a href="#lastest">
+                  <button
+                type="button"
+                class="btn btn-outline-light"
+                data-mdb-ripple-color="light">
+                  Explore
+              </button>
+                </a>
+              </div>
+            </div>
+        
+            <!-- Single item -->
+            <div class="carousel-item">
+              <div class="hero-txt">
+                <p class="hero-work">Nhanh nhất - Mới nhất - Chính xác nhất</p>
+                <h2 class="hero-title">Esport.gg</h2>
+                <a href="#lastest">
+                  <button
+                type="button"
+                class="btn btn-outline-light"
+                data-mdb-ripple-color="light">
+                  Explore
+              </button>
+              </div>
+            </div>
+          </div>
+          <!-- Inner -->
+        </div>
+        <!-- Carousel wrapper -->
+    </header>
+
+    <main class="mb-5">
+      <div class="container">
+        <h2 class="mb-5 text-center" style="color: #444;">Lastest Features</h2>
+        <!--Section: Posts-->
+        <section class="text-center mb-4 my-4" id="posts">
+          <div class="row my-4">
+            <div class="col-md-4">
+              <div class="card">
+                <!-- Card image -->
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4" data-mdb-ripple-color="light">
+                  <img
+                    data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/bltb0ee0a07d1873913/627a003d29f29d7c033ac1e4/1920x1080_VCT_Primer_Article_Header.jpg?width=720&height=405"
+                    data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                    class="w-100 lazy"
+                  />
+                  <a href="singleLF1.html">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                  <!-- Title -->
+                  <h4 class="card-title">VCT EMEA Stage2Challengers Begins May 13</h4>
+                  <!-- Text -->
+                  <p class="card-text">
+                    Everything you need to know about the next stage of Europe’s premier VALORANT competition ...
+                  </p>
+                  <a class="btn btn-info btn-rounded mb-0" href="singleLF1.html" role="button">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <!-- Card image -->
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4" data-mdb-ripple-color="light">
+                  <img
+                    data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt89ae626d80a57a07/6273b93852bd3634ca6fe90e/VRLSTAGE2_TWITTER.jpg?width=720&height=405"
+                    data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                    class="w-100 lazy"
+                  />
+                  <a href="singleLF2.html">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                  <!-- Title -->
+                  <h4 class="card-title">Reload for VALORANT Regional Leagues
+                    Stage 2 Competition!</h4>
+                  <!-- Text -->
+                  <p class="card-text">
+                    VALORANT action across EMEA begins May 9 ...
+                  </p>
+                  <a class="btn btn-info btn-rounded mb-0" href="singleLF2.html" role="button">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <!-- Card image -->
+                <div class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4" data-mdb-ripple-color="light">
+                  <img
+                    data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt0c5fc4c82d98e5c7/6267fcb0b442146752e03370/Untitled_design_(4).jpg?width=720&height=405"
+                    data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                    class="w-100 lazy"
+                  />
+                  <a href="singleLF3.html">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                  <!-- Title -->
+                  <h4 class="card-title">VCT Masters Stage 1: OpTiC Gaming emerge
+                    victorious in the most insane tournament
+                                     yet</h4>
+                  <!-- Text -->
+                  <p class="card-text">
+                    It’s safe to say that 2022’s Masters Reykjavik was one of the craziest VALORANT tournaments that we’ve seen to date ....
+                  </p>
+                  <a class="btn btn-info btn-rounded mb-0" href="singleLF3.html" role="button">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Posts-->
+        
+        <hr class="my-5" />
+
+        <div class="row">
+          <div class="col-md">
+            <h2 class="mb-5 text-center" style="color: #444;">News <a href="news_2.html"><i class="fas fa-chevron-circle-right" style="font-size: 20px;"></i></a></h2>
+            
+            <!--Section: Posts-->
+            <section class="mb-0" id="posts">
+              <div class="card mb-4">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                      <img
+                        data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt0c4cad376a0a98dd/6257109b2777714c51b30473/Image_from_iOS.jpg?width=519&height="
+                        data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                        class="w-100 lazy d-flex align-items-center justify-content-center"
+                      />
+                      <a href="new1.html">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <h5>COMPETITIVE RULING - KREA6ON</h5>
+                    <p>
+                      TL;DR: During an online VALORANT ranked match, Vilius "krea6oN" Malinauskas violated the VALORANT Code of Conduct section of the Global Competition Policy. This section mandates that players observe the highest standards of personal integrity and professional behaviour at all times. As a result, Krea6on is suspended from all official VALORANT esports competitions for the duration of Stage 2.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card mb-4">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                      <img
+                        data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt538b38ff13f3426d/62553d498159d551ca3b48e8/Untitled_design_(3).jpg?width=519&height="
+                        data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                        class="w-100 lazy w-100 lazy d-flex align-items-center justify-content-center"
+                      />
+                      <a href="new2.html">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <h5>VALORANT CHALLENGERS PROMOTION
+                      TOURNAMENT EMEA: DACH DOMINANCE AS BIG
+                      &FOKUS PROGRESS</h5>
+                    <p>
+                      As VCT Stage1Challengers is confined to the annals of
+history, new VALORANT champions have emerged from
+VALORANT Challengers Promotion Tournament with their
+eyes set on the VCT Stage2Challengers prize ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+                      <img
+                        data-mdb-lazy-src="https://images.contentstack.io/v3/assets/bltb730eada072bdbf4/blt9c69f9fbd42338c5/624ae245de850a7f6b5ab242/CIS_Update.jpg?width=519&height="
+                        data-mdb-lazy-placeholder="https://static.vecteezy.com/system/resources/previews/000/344/660/large_2x/vector-blue-gradient-loading-bar-for-web-interfaces-template-flat-button.jpg"
+                        class="w-100 lazy d-flex align-items-center justify-content-center"
+                      />
+                      <a href="new1.html">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <h5>VALORANT REGIONAL LEAGUE CIS UPDATE
+                    </h5>
+                    <p>
+                      After careful consideration, we have made the tough
+decision to postpone the VALORANT Regional League CIS
+competitions until further notice. This will not affect the
+teams and players ability to participate in other regional...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--Section: Posts-->
+          </div>
+          
+          <div class="col-md-3">
+            <h2 class="mb-5 text-center" style="color: #444;">VODS</h2>
+            <section class="text-center mb-4" id="vods-valorant">
+              <div class="card text-center mb-2" style="padding: 10px 10px 10px 10px;">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="img/team3.png" class="img-fluid" style="margin-top: 3px;"/>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                      <h5 style="margin-top: 5px;" class="text-center">vs</h5>
+                  </div>
+    
+                  <div class="col-md-3">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="img/team4.png" class="img-fluid" style="margin-top: 3px;"/>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-2">
+                    <a href="schedule.html"><h5 style="margin-top: 7px;" class="text-center"><i class="fas fa-caret-right"></i></h5></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright: Esport.gg
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <div style="margin-bottom: -100px;">
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="js/vods-valorant.js"></script>
+    <script src="js/vods-lol.js"></script>
+  </body>
+</html>
